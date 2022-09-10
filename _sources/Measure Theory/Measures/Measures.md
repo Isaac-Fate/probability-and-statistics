@@ -1,5 +1,7 @@
 # Measures
+\ 
 A **set function** is a function that maps from collections of subsets of $\Omega$ to the extended real numbers $\R\cup\left\{\pm\infty\right\}$.
+\ 
 We say a set function $\mu$ is **finitely additive** if 
 ```{math}
 \begin{align*}
@@ -14,6 +16,7 @@ The above equation also holds for finitely many disjoint unions of sets, that is
 \end{align}
 ```
 which can be proved by the mathematical induction.
+\ 
 If {eq}`eq:1` holds for countably infinite disjoint unions of sets, i.e., 
 ```{math}
 \begin{align*}
@@ -27,10 +30,12 @@ Let $(\Omega, \F)$ be a measurable space. A set function $\mu: \F\to[0, \infty]$
 2. $\mu$ is $\sigma$-additive.
 The triplet $(\Omega, \F, \mu)$ is then called a **measure space**.
 ````
+\ 
 If $\mu$ is only finitely additive, we say that $\mu$ is a **finitely additive measure**. 
 ````{prf:remark}
 If we assume $\mu: \F\to[0, \infty]$ is $\sigma$-additive, and there exists some set $A \in\F$ such that $\mu(A) < \infty$, then $\mu(\emptyset) = 0$ holds naturally and hence condition 1 is redundant. To see this, we note that $\mu(A) = \mu(A \uplus\emptyset) = \mu(A) + \mu(\emptyset)$, which implies $\mu(\emptyset) = 0$ provided that $\mu(A)$ is finite.
 ````
+\ 
 The following proposition shows the monotonicity of a measure.
 ````{prf:proposition}
 :label: pro:2
@@ -68,6 +73,7 @@ By the $\sigma$-additivity (or weaker, the finite additivity), it follows that
 \end{align*}
 ```
 ````
+\ 
 Given a sequence of sets $\left\{A_k\right\}$, we need this sequence of sets to be mutually disjoint in order to apply the $\sigma$-additivity of a measure. However, it is not the case in general. But we can easily construct another sequence of mutually disjoint sets from $\left\{A_k\right\}$ while keeping the union of first $n$ sets unchanged. The procedure is illustrated in the following proposition.
 ````{prf:proposition}
 :label: pro:1
