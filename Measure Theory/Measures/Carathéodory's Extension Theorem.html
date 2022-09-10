@@ -421,7 +421,7 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(\restr{\mu^\ast}{\M}\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-additive.</p></li>
 </ol>
 </section>
-</div><p>\
+</div><p><br />
 Consider the equality</p>
 <div class="math notranslate nohighlight">
 \[\begin{align*}
@@ -438,25 +438,25 @@ Consider the equality</p>
 \mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>in order to prove the equality.
-\
+<br />
 Before proving that <span class="math notranslate nohighlight">\(\M\)</span> is a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra, we first show that it is an algebra.</p>
 <div class="proof admonition" id="proof">
 <p>Proof. We shall check each condition in the definition of an algebra.
-\
+<br />
 (Containment of the Empty Set) Note that</p>
 <div class="math notranslate nohighlight">
 \[\begin{align*}
 \mu^\ast(E \cap\Omega) + \mu^\ast(E \cap\Omega^\complement) = \mu^\ast(E) + 0 = \mu^\ast(E)
 \end{align*}\]</div>
 <p>Therefore, clearly <span class="math notranslate nohighlight">\(\Omega\in\M\)</span>.
-\
+<br />
 (Closure under Complements) Suppose <span class="math notranslate nohighlight">\( A \in\M\)</span>, then <span class="math notranslate nohighlight">\(\forall E \subset\Omega\)</span>, we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{align*}
 \mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement) = \mu^\ast(E \cap(A^\complement)^\complement) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>The last equality above implies that <span class="math notranslate nohighlight">\( A^\complement\in\M\)</span>.
-\
+<br />
 (Closure under Finite Intersections) Suppose <span class="math notranslate nohighlight">\( A_1, A_2 \in\M\)</span>. Let <span class="math notranslate nohighlight">\( E \subset\Omega\)</span> be arbitrary, then</p>
 <div class="math notranslate nohighlight" id="equation-eq-18">
 <span class="eqno">(4)<a class="headerlink" href="#equation-eq-18" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{alignat}
@@ -474,11 +474,11 @@ Before proving that <span class="math notranslate nohighlight">\(\M\)</span> is 
 \end{align*}\]</div>
 <p>Therefore, <span class="math notranslate nohighlight">\( A_1 \cap A_2 \in\M\)</span>.</p>
 </div>
-<p>\
+<p><br />
 In the following, we show that <span class="math notranslate nohighlight">\(\restr{\mu^\ast}{\M}\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-additive.</p>
 <div class="proof admonition" id="proof">
 <p>Proof. We prove this by first showing <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is additive on <span class="math notranslate nohighlight">\(\M\)</span> and then applying <a class="reference internal" href="Measures.html#pro:3">Proposition 4</a> to conclude that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is actually <span class="math notranslate nohighlight">\(\sigma\)</span>-additive on <span class="math notranslate nohighlight">\(\M\)</span>.
-\
+<br />
 (Additivity) First, clearly <span class="math notranslate nohighlight">\(\mu^\ast(\emptyset) = 0 \)</span> since <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure. Suppose <span class="math notranslate nohighlight">\( A_1, A_2 \in\M\)</span> and <span class="math notranslate nohighlight">\( A = A_1 \uplus A_2 \)</span>. Note that <span class="math notranslate nohighlight">\( A \in\M\)</span> since we have shown that <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. It follows that</p>
 <div class="math notranslate nohighlight">
 \[\begin{align*}
@@ -493,10 +493,10 @@ In the following, we show that <span class="math notranslate nohighlight">\(\res
 <div class="math notranslate nohighlight">
 \[\begin{align*}
 \mu^\ast\left(\biguplus_{i=1}^n {A_i}\right)= \sum_{i=1}^n {\mu^\ast(A_i)}\end{align*}\]</div>
-<p>\
+<p><br />
 (<span class="math notranslate nohighlight">\(\sigma\)</span>-Additivity) Note that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditive on <span class="math notranslate nohighlight">\(\Pow(\Omega) \)</span>(and of course it is also <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditive on <span class="math notranslate nohighlight">\(\M\)</span>) because <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure. Moreover, we have already shown that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is also additive on <span class="math notranslate nohighlight">\(\M\)</span>. Then <a class="reference internal" href="Measures.html#pro:3">Proposition 4</a> immediately implies that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-additive.</p>
 </div>
-<p>\
+<p><br />
 Finally, we show that <span class="math notranslate nohighlight">\(\M\)</span> is actually a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra.</p>
 <div class="proof admonition" id="proof">
 <p>Proof. Recall that we have already shown <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. Hence, we only need to show that <span class="math notranslate nohighlight">\(\M\)</span> is closed under countable unions. Suppose that <span class="math notranslate nohighlight">\( A_i \in\M\)</span> and <span class="math notranslate nohighlight">\( A = \bigcup_{i=1}^\infty{A_i}\)</span>. Fix a set <span class="math notranslate nohighlight">\( E \subset\Omega\)</span>. Note that <span class="math notranslate nohighlight">\(\bigcap_{i=1}^n {A_i}\in\M\)</span> since <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. It then follows that</p>
@@ -541,7 +541,7 @@ G_1 &amp;= F_1 &amp; G_i &amp;= F_i \setminus\bigcup_{j=1}^{i-1}{F_j}\quad  i \g
 \end{align*}\]</div>
 <p>In fact, the inequality above can be replaced by equality as we have explained before. Therefore, <span class="math notranslate nohighlight">\( A \in\M\)</span> and hence <span class="math notranslate nohighlight">\(\M\)</span> is indeed a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra.</p>
 </div>
-<p>\
+<p><br />
 The following theorem extends a pre-measure, i.e., a <span class="math notranslate nohighlight">\(\sigma\)</span>-additive nonnegative set function on an algebra <span class="math notranslate nohighlight">\(\A\)</span> to a measure on the <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra generated by <span class="math notranslate nohighlight">\(\A\)</span>.</p>
 <div class="proof theorem admonition" id="thm:2">
 <p class="admonition-title"><span class="caption-number">Theorem 3 </span></p>
