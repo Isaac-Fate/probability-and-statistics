@@ -1,0 +1,26 @@
+format: jb-book
+parts:
+- caption: Measure Theory
+  chapters:
+  - file: Measure Theory/Measures/index
+    sections:
+    - file: Measure Theory/Measures/Semi-Algebras, Algebras and Sigma-Algebras
+    - file: Measure Theory/Measures/Measures
+    - file: Measure Theory/Measures/Extension of Set Functions on Semi-Algebras
+    - file: "Measure Theory/Measures/Carath\xE9odory's Extension Theorem"
+    - file: Measure Theory/Measures/Lebesgue Measure
+- caption: Probability Theory
+  chapters:
+  - file: Probability Theory/Random Variables, Expectations, and Independence/index
+    sections:
+    - file: Probability Theory/Random Variables, Expectations, and Independence/Random
+        Variables
+- caption: Mathematical Statistics
+  chapters:
+  - file: Mathematical Statistics/Fundamentals of Statistics/index
+    sections:
+    - file: Mathematical Statistics/Fundamentals of Statistics/Populations, Samples
+        and Models
+    - file: Mathematical Statistics/Fundamentals of Statistics/Statistical Decision
+        Theory
+root: intro
