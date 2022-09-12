@@ -4,6 +4,7 @@
 An **outer measure** on $\Omega$ is a set function $\mu^\ast : \Pow(\Omega) \to[0, \infty]$ such that it
 1.  assumes zero at empty set, i.e., $\mu^\ast(\emptyset) = 0 $, and
 2.  is $\sigma$-subadditive, i.e., $ E \subset\bigcup_{i=1}^\infty{E_i}, \;\mu^\ast(E) \leq\sum_{i=1}^\infty{\mu^\ast(E_i)}$
+\
 ````
 ````{prf:definition}
 Suppose that $\mu^\ast$ is an outer measure on $\Omega$. The collection of **measurable sets** with respect to $\mu^\ast$ is defined by 
@@ -18,6 +19,7 @@ Sometimes, we also say the sets in $\M$ are $\mu^\ast$-measurable.
 Let $\mu^\ast$ be an outer measure on $\Omega$ and $\M$ the collection of $\mu^\ast$-measurable sets. We claim that 
 1. $\M$ is a $\sigma$-algebra, and
 2. $\restr{\mu^\ast}{\M}$ is $\sigma$-additive.
+\
 ````
 \
 Consider the equality 

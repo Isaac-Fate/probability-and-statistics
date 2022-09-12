@@ -4,6 +4,7 @@ A family of subsets $\SSS$ of $\Omega$ is a semi-algebra if it
 1.  contains the empty set, i.e., $\emptyset\in\SSS$, 
 2.  closed under finite Intersections, i.e., $A, B \in\SSS\implies A \cap B \in\SSS$, and 
 3.  the complement of each set in $\SSS$ can be written as a finite disjoint union of other sets in $\SSS$, i.e., $A \in\SSS\implies\exists E_1, \ldots, E_n \in\SSS, \; A = \biguplus_{i=1}^n E_i$.
+\
 ````
 ````{prf:example}
 :label: eg:1
@@ -20,6 +21,7 @@ A family of subsets $\F$ of $\Omega$ is a $\sigma$-algebra  if it satisfies the 
 1. $\emptyset\in\F$
 2. $\F$ is closed under complements, i.e., $A \in\F\implies A^\complement\in\F$
 3. $\F$ is closed under countable unions, i.e., $A_i \in\F\;\forall i \in\Ns\implies\bigcup_{i=1}^\infty A_i \in\F$
+\
 ````
 ````{prf:proposition}
 :label: pro:4
@@ -48,6 +50,7 @@ Suppose $\CC_1, \CC_2 \subset\Omega$. If for any $E \in\CC_1$, either one of the
 1. $E = F^\complement$ for some $F \in\CC_2$
 2. $E = \bigcup_{i=1}^\infty F_i$ where $F_i \in\CC_2 \;\forall i \in\Ns$
 3. $E = \bigcap_{i=1}^\infty F_i$ where $F_i \in\CC_2 \;\forall i \in\Ns$
+\
 then we have 
 ```{math}
 \begin{align*}

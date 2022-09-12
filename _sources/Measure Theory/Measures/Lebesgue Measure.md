@@ -9,12 +9,14 @@ We start by defining an additive nonnegative set function $\ell$ on the semi-alg
 4. $(-\infty, b]$
 5. $\R$
 \
+\
 Define 
 1. $\ell(\emptyset) := 0$
 2. $\ell(a, b] := b-a$
 3. $\ell(a, \infty) := \infty$
 4. $\ell(-\infty, b] := \infty$
 5. $\ell(\R) := \infty$
+\
 As we can see, the function $\ell$ is simply the length of the intervals, and it is clearly *finitely* additive. We wish to extend this measurement of length to a larger collection of subsets of $\R$, which gives rise to the Lebesgue measure. As a custom, we use $\lambda$ to denote the Lebesgue measure. 
 \
 It is temping to apply {prf:ref}`thm:3` to extend $\ell$. But then, as required in this theorem, we need to show that $\ell$ is $\sigma$-additive on $\SSS$, which is somehow difficult to prove *directly* even though it may seem to hold naturally.

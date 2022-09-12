@@ -28,6 +28,7 @@ Then we say $\mu$ is **$\sigma$-additive**.
 Let $(\Omega, \F)$ be a measurable space. A set function $\mu: \F\to[0, \infty]$ is called a **measure** if
 1. $\mu(\emptyset) = 0$, and 
 2. $\mu$ is $\sigma$-additive.
+\
 The triplet $(\Omega, \F, \mu)$ is then called a **measure space**.
 ````
 \
