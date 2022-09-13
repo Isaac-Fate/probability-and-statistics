@@ -13,8 +13,7 @@ Let $\SSS$ be a semi-algebra on $\Omega$, and $\mu: \SSS\to[0, \infty]$ a nonneg
 To be specific, this extension $\nu$ is given by 
 
 ```{math}
-\begin{align*}
-\nu(A) = \sum_{i=1}^n \mu(E_i)
+\begin{align*}\nu(A) = \sum_{i=1}^n \mu(E_i)
 \end{align*}
 ```
 

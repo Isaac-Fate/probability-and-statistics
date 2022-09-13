@@ -8,8 +8,7 @@ A **set function** is a function that maps from collections of subsets of $\Omeg
 We say a set function $\mu$ is **finitely additive** if 
 
 ```{math}
-\begin{align*}
-\mu(A \uplus B) = \mu(A) + \mu(B)
+\begin{align*}\mu(A \uplus B) = \mu(A) + \mu(B)
 \end{align*}
 ```
 
@@ -17,8 +16,7 @@ The above equation also holds for finitely many disjoint unions of sets, that is
 
 ```{math}
 :label: eq:1
-\begin{align}
-\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^n \mu(A_i)
+\begin{align}\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^n \mu(A_i)
 \end{align}
 ```
 
@@ -29,8 +27,7 @@ which can be proved by the mathematical induction.
 If {eq}`eq:1` holds for countably infinite disjoint unions of sets, i.e., 
 
 ```{math}
-\begin{align*}
-\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^\infty\mu(A_i)
+\begin{align*}\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^\infty\mu(A_i)
 \end{align*}
 ```
 
@@ -72,7 +69,6 @@ Let $(\Omega, \F, \mu)$ be a measure space. For $A, B \in\F$, we have
 ```{math}
 :label: eq:2
 \begin{align}
-
 A \subset B \implies\mu(A) \leq\mu(B)
 \end{align}
 ```
@@ -80,8 +76,7 @@ A \subset B \implies\mu(A) \leq\mu(B)
 Moreover, if $\mu(A) < \infty$ in {eq}`eq:2`, we have 
 
 ```{math}
-\begin{align*}
-\mu(B \setminus A) = \mu(B) - \mu(A)
+\begin{align*}\mu(B \setminus A) = \mu(B) - \mu(A)
 \end{align*}
 ```
 
@@ -93,7 +88,6 @@ Suppose $A \subset B$. We have
 
 ```{math}
 \begin{align*}
-
 B = A \uplus(B \setminus A)
 \end{align*}
 ```
@@ -101,15 +95,13 @@ B = A \uplus(B \setminus A)
 By the $\sigma$-additivity (or weaker, the finite additivity), it follows that 
 
 ```{math}
-\begin{align*}
-\mu(B) = \mu(A) + \mu(B \setminus A)
+\begin{align*}\mu(B) = \mu(A) + \mu(B \setminus A)
 \end{align*}
 ```
 {eq}`eq:2` follows since $\mu(B \setminus A) \geq 0$. If $\mu(A) < \infty$, by subtracting $\mu(A)$ from both sides of the above equation, we obtain
 
 ```{math}
-\begin{align*}
-\mu(B) - \mu(A) = \mu(B \setminus A)
+\begin{align*}\mu(B) - \mu(A) = \mu(B \setminus A)
 \end{align*}
 ```
 
@@ -126,7 +118,6 @@ Let $\left\{A_k\right\}_{k\in\Ns}$ be sequence of subsets of $\Omega$. Let $B_k$
 
 ```{math}
 \begin{align*}
-
 B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
 \end{align*}
 ```
@@ -134,8 +125,7 @@ B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
 where $A_0 := \emptyset$. Then $\left\{ B_k \right\}$ is a family of mutually disjoint sets, and 
 
 ```{math}
-\begin{align*}
-\biguplus_{k=1}^n B_k 
+\begin{align*}\biguplus_{k=1}^n B_k 
 = \bigcup_{k=1}^n A_k
 \quad\forall n \in\Ns\end{align*}
 ```
@@ -143,8 +133,7 @@ where $A_0 := \emptyset$. Then $\left\{ B_k \right\}$ is a family of mutually di
 Specially, 
 
 ```{math}
-\begin{align*}
-\biguplus_{k=1}^\infty B_k 
+\begin{align*}\biguplus_{k=1}^\infty B_k 
 = \bigcup_{k=1}^\infty A_k
 \end{align*}
 ```
@@ -167,8 +156,7 @@ Let $(\Omega, \F, \mu)$ be a measure space, and $\left\{A_k\right\}$ a sequence 
 
 ```{math}
 :label: eq:3
-\begin{align}
-\mu\left(\bigcup_{k=1}^\infty A_k\right)\leq\sum_{k=1}^\infty\mu(A_k)
+\begin{align}\mu\left(\bigcup_{k=1}^\infty A_k\right)\leq\sum_{k=1}^\infty\mu(A_k)
 \end{align}
 ```
 
@@ -186,7 +174,6 @@ Let $B_k$ be given by
 
 ```{math}
 \begin{align*}
-
 B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
 \end{align*}
 ```
@@ -194,8 +181,7 @@ B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
 as in {prf:ref}`pro:1`. Then we have 
 
 ```{math}
-\begin{align*}
-\mu\left(\bigcup_{k=1}^\infty A_k\right)        = \mu\left(\biguplus_{k=1}^\infty B_k\right)        = \sum_{k=1}^\infty\mu(B_k)
+\begin{align*}\mu\left(\bigcup_{k=1}^\infty A_k\right)        = \mu\left(\biguplus_{k=1}^\infty B_k\right)        = \sum_{k=1}^\infty\mu(B_k)
 \leq\sum_{k=1}^\infty\mu(A_k)
 \end{align*}
 ```

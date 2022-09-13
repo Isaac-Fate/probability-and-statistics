@@ -408,8 +408,7 @@ title="Print to PDF"
 <section class="definition-content" id="proof-content">
 <p>Suppose that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure on <span class="math notranslate nohighlight">\(\Omega\)</span>. The collection of <strong>measurable sets</strong> with respect to <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is defined by</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\M = \set{A \subset \Omega}{\forall E \subset \Omega, \; \mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)}\end{align*}\]</div>
+\[\begin{align*}\M = \set{A \subset \Omega}{\forall E \subset \Omega, \; \mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)}\end{align*}\]</div>
 <p>Sometimes, we also say the sets in <span class="math notranslate nohighlight">\(\M\)</span> are <span class="math notranslate nohighlight">\(\mu^\ast\)</span>-measurable.</p>
 </section>
 </div><div class="proof theorem admonition" id="thm:4">
@@ -423,18 +422,15 @@ title="Print to PDF"
 </section>
 </div><p>Consider the equality</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>in the definition of <span class="math notranslate nohighlight">\(\M\)</span>. Note that it always holds that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \leq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) \leq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>because <span class="math notranslate nohighlight">\( E \subset(E\cap A) \cup(E \cap A^\complement) \)</span> and <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure and hence <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditive. Therefore, in the following proofs, we only need to show</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>in order to prove the equality.</p>
 <p>Before proving that <span class="math notranslate nohighlight">\(\M\)</span> is a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra, we first show that it is an algebra.</p>
@@ -442,30 +438,25 @@ title="Print to PDF"
 <p>Proof. We shall check each condition in the definition of an algebra.</p>
 <p>(Containment of the Empty Set) Note that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E \cap\Omega) + \mu^\ast(E \cap\Omega^\complement) = \mu^\ast(E) + 0 = \mu^\ast(E)
+\[\begin{align*}\mu^\ast(E \cap\Omega) + \mu^\ast(E \cap\Omega^\complement) = \mu^\ast(E) + 0 = \mu^\ast(E)
 \end{align*}\]</div>
 <p>Therefore, clearly <span class="math notranslate nohighlight">\(\Omega\in\M\)</span>.</p>
 <p>(Closure under Complements) Suppose <span class="math notranslate nohighlight">\( A \in\M\)</span>, then <span class="math notranslate nohighlight">\(\forall E \subset\Omega\)</span>, we have</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement) = \mu^\ast(E \cap(A^\complement)^\complement) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) = \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement) = \mu^\ast(E \cap(A^\complement)^\complement) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>The last equality above implies that <span class="math notranslate nohighlight">\( A^\complement\in\M\)</span>.</p>
 <p>(Closure under Finite Intersections) Suppose <span class="math notranslate nohighlight">\( A_1, A_2 \in\M\)</span>. Let <span class="math notranslate nohighlight">\( E \subset\Omega\)</span> be arbitrary, then</p>
 <div class="math notranslate nohighlight" id="equation-eq-18">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eq-18" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{alignat}
-3\mu^\ast(E)
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-18" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{alignat}3\mu^\ast(E)
 &amp;=&amp; \;&amp; \mu^\ast(E \cap A_1) + \mu^\ast(E \cap{A_1}^\complement) &amp;\quad&amp;\text{since $ A_1 \in \M $}\nonumber\\&amp;=&amp; \;&amp; \mu^\ast(E \cap A_1 \cap A_2) + \mu^\ast(E \cap A_1 \cap{A_2}^\complement) + \mu^\ast(E \cap{A_1}^\complement) &amp;\quad&amp;\text{since $ A_2 \in \M $}\end{alignat}\end{split}\]</div>
 <p>On the other hand, consider <span class="math notranslate nohighlight">\(\mu^\ast(E \cap{(A_1 \cap A_2)}^\complement) \)</span>. We have</p>
 <div class="math notranslate nohighlight" id="equation-eq-19">
-<span class="eqno">(5)<a class="headerlink" href="#equation-eq-19" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{alignat}
-3\mu^\ast(E \cap{(A_1 \cap A_2)}^\complement)
+<span class="eqno">(5)<a class="headerlink" href="#equation-eq-19" title="Permalink to this equation">#</a></span>\[\begin{split}\begin{alignat}3\mu^\ast(E \cap{(A_1 \cap A_2)}^\complement)
 &amp;=&amp; \;&amp; \mu^\ast((E \cap{A_1}^\complement) \cup(E \cap{A_2}^\complement)) &amp;\quad&amp; \nonumber\\&amp;=&amp; \;&amp; \mu^\ast(E \cap A_1 \cap{A_2}^\complement) + \mu^\ast(E \cap{A_1}^\complement) &amp;\quad&amp;\text{since $ A_1 \in \M $}\end{alignat}\end{split}\]</div>
 <p>Combining equations <a class="reference internal" href="#equation-eq-18">(4)</a> and <a class="reference internal" href="#equation-eq-19">(5)</a>, we obtain</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) = \mu^\ast(E \cap A_1 \cap A_2) + \mu^\ast(E \cap{(A_1 \cap A_2)}^\complement)
+\[\begin{align*}\mu^\ast(E) = \mu^\ast(E \cap A_1 \cap A_2) + \mu^\ast(E \cap{(A_1 \cap A_2)}^\complement)
 \end{align*}\]</div>
 <p>Therefore, <span class="math notranslate nohighlight">\( A_1 \cap A_2 \in\M\)</span>.</p>
 </div>
@@ -474,59 +465,51 @@ title="Print to PDF"
 <p>Proof. We prove this by first showing <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is additive on <span class="math notranslate nohighlight">\(\M\)</span> and then applying <a class="reference internal" href="Measures.html#pro:3">Proposition 5</a> to conclude that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is actually <span class="math notranslate nohighlight">\(\sigma\)</span>-additive on <span class="math notranslate nohighlight">\(\M\)</span>.</p>
 <p>(Additivity) First, clearly <span class="math notranslate nohighlight">\(\mu^\ast(\emptyset) = 0 \)</span> since <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure. Suppose <span class="math notranslate nohighlight">\( A_1, A_2 \in\M\)</span> and <span class="math notranslate nohighlight">\( A = A_1 \uplus A_2 \)</span>. Note that <span class="math notranslate nohighlight">\( A \in\M\)</span> since we have shown that <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. It follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(A) = \mu^\ast(A \cap A_1) + \mu^\ast(A \cap{A_1}^\complement)
+\[\begin{align*}\mu^\ast(A) = \mu^\ast(A \cap A_1) + \mu^\ast(A \cap{A_1}^\complement)
 \end{align*}\]</div>
 <p>Note that <span class="math notranslate nohighlight">\( A \cap A_1 = A_1 \)</span> and <span class="math notranslate nohighlight">\( A \cap{A_1}^\complement = A_2 \)</span>. Therefore,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(A) = \mu^\ast(A_1) + \mu^\ast(A_2)
+\[\begin{align*}\mu^\ast(A) = \mu^\ast(A_1) + \mu^\ast(A_2)
 \end{align*}\]</div>
 <p>Then by induction, we can show that for <span class="math notranslate nohighlight">\( A_i \in\M\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast\left(\biguplus_{i=1}^n {A_i}\right)= \sum_{i=1}^n {\mu^\ast(A_i)}\end{align*}\]</div>
+\[\begin{align*}\mu^\ast\left(\biguplus_{i=1}^n {A_i}\right)= \sum_{i=1}^n {\mu^\ast(A_i)}\end{align*}\]</div>
 <p>(<span class="math notranslate nohighlight">\(\sigma\)</span>-Additivity) Note that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditive on <span class="math notranslate nohighlight">\(\Pow(\Omega) \)</span>(and of course it is also <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditive on <span class="math notranslate nohighlight">\(\M\)</span>) because <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is an outer measure. Moreover, we have already shown that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is also additive on <span class="math notranslate nohighlight">\(\M\)</span>. Then <a class="reference internal" href="Measures.html#pro:3">Proposition 5</a> immediately implies that <span class="math notranslate nohighlight">\(\mu^\ast\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-additive.</p>
 </div>
 <p>Finally, we show that <span class="math notranslate nohighlight">\(\M\)</span> is actually a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra.</p>
 <div class="proof admonition" id="proof">
 <p>Proof. Recall that we have already shown <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. Hence, we only need to show that <span class="math notranslate nohighlight">\(\M\)</span> is closed under countable unions. Suppose that <span class="math notranslate nohighlight">\( A_i \in\M\)</span> and <span class="math notranslate nohighlight">\( A = \bigcup_{i=1}^\infty{A_i}\)</span>. Fix a set <span class="math notranslate nohighlight">\( E \subset\Omega\)</span>. Note that <span class="math notranslate nohighlight">\(\bigcap_{i=1}^n {A_i}\in\M\)</span> since <span class="math notranslate nohighlight">\(\M\)</span> is an algebra. It then follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{alignat*}
-2\mu^\ast(E)
+\[\begin{split}\begin{alignat*}2\mu^\ast(E)
 &amp;=&amp; \;&amp; \mu^\ast\left( E \cap\bigcap_{i=1}^n {A_i}\right)+ \mu^\ast\left( E \cap\left(\bigcap_{i=1}^n {A_i}\right)^\complement\right)\\&amp;=&amp;&amp; \mu^\ast\left( E \cap\bigcap_{i=1}^n {A_i}\right)+ \mu^\ast\left( E \cap\bigcup_{i=1}^n {{A_i}^\complement}\right)\end{alignat*}\end{split}\]</div>
 <p>And since <span class="math notranslate nohighlight">\( E \cap\bigcap_{i=1}^n {A_i}\supset E \cap\bigcap_{i=1}^\infty{A_i} = E \cap A \)</span>, we have</p>
 <div class="math notranslate nohighlight" id="equation-eq-20">
-<span class="eqno">(6)<a class="headerlink" href="#equation-eq-20" title="Permalink to this equation">#</a></span>\[\begin{align}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast\left( E \cap\bigcup_{i=1}^n {{A_i}^\complement}\right)\end{align}\]</div>
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-20" title="Permalink to this equation">#</a></span>\[\begin{align}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast\left( E \cap\bigcup_{i=1}^n {{A_i}^\complement}\right)\end{align}\]</div>
 <p>For the convenience of the notations, we denote</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\F_i = E \cap\bigcup_{j=1}^i {{A_j}^\complement}\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+F_i = E \cap\bigcup_{j=1}^i {{A_j}^\complement}\end{align*}\]</div>
 <p>Define sets <span class="math notranslate nohighlight">\( G_i \)</span> as follows.</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\G_1 &amp;= F_1 &amp; G_i &amp;= F_i \setminus\bigcup_{j=1}^{i-1}{F_j}\quad  i \geq 2
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+G_1 &amp;= F_1 &amp; G_i &amp;= F_i \setminus\bigcup_{j=1}^{i-1}{F_j}\quad  i \geq 2
+\end{align*}\]</div>
 <p>One can show that all <span class="math notranslate nohighlight">\( G_i \)</span>‘s are mutually disjoint and <span class="math notranslate nohighlight">\(\bigcup_{i=1}^n {G_i} = \bigcup_{i=1}^n {F_i}\)</span>. It is also true that <span class="math notranslate nohighlight">\(\bigcup_{i=1}^\infty{G_i} = \bigcup_{i=1}^\infty{F_i}\)</span>. In summary,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\biguplus_{i=1}^n {G_i}&amp;= \bigcup_{i=1}^n {F_i}&amp; \biguplus_{i=1}^\infty{G_i}&amp;= \bigcup_{i=1}^\infty{F_i} = E \cap A^\complement\end{align*}\]</div>
+\[\begin{align*}\biguplus_{i=1}^n {G_i}&amp;= \bigcup_{i=1}^n {F_i}&amp; \biguplus_{i=1}^\infty{G_i}&amp;= \bigcup_{i=1}^\infty{F_i} = E \cap A^\complement\end{align*}\]</div>
 <p>Applying the additivity of <span class="math notranslate nohighlight">\(\mu^\ast\)</span>(this is valid because <span class="math notranslate nohighlight">\( G_i \in\M\)</span>) to inequality <a class="reference internal" href="#equation-eq-20">(6)</a>, we obtain</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast\left(\biguplus_{i=1}^n G_i\right)= \mu^\ast(E \cap A) + \sum_{i=1}^n {\mu^\ast(G_i)}\end{align*}\]</div>
+\[\begin{align*}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast\left(\biguplus_{i=1}^n G_i\right)= \mu^\ast(E \cap A) + \sum_{i=1}^n {\mu^\ast(G_i)}\end{align*}\]</div>
 <p>Letting <span class="math notranslate nohighlight">\( n \to\infty\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \sum_{i=1}^\infty{\mu^\ast(G_i)}\end{align*}\]</div>
+\[\begin{align*}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \sum_{i=1}^\infty{\mu^\ast(G_i)}\end{align*}\]</div>
 <p>Then we apply the <span class="math notranslate nohighlight">\(\sigma\)</span>-subadditivity of <span class="math notranslate nohighlight">\(\mu^\ast\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \sum_{i=1}^\infty{\mu^\ast(G_i)}\geq\mu^\ast(E \cap A) + \mu^\ast\left(\biguplus_{i=1}^\infty{G_i}\right)= \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \sum_{i=1}^\infty{\mu^\ast(G_i)}\geq\mu^\ast(E \cap A) + \mu^\ast\left(\biguplus_{i=1}^\infty{G_i}\right)= \mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>Therefore, we have shown that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
+\[\begin{align*}\mu^\ast(E) \geq\mu^\ast(E \cap A) + \mu^\ast(E \cap A^\complement)
 \end{align*}\]</div>
 <p>In fact, the inequality above can be replaced by equality as we have explained before. Therefore, <span class="math notranslate nohighlight">\( A \in\M\)</span> and hence <span class="math notranslate nohighlight">\(\M\)</span> is indeed a <span class="math notranslate nohighlight">\(\sigma\)</span>-algebra.</p>
 </div>

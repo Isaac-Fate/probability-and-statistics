@@ -397,19 +397,16 @@ title="Print to PDF"
 <p>A <strong>set function</strong> is a function that maps from collections of subsets of <span class="math notranslate nohighlight">\(\Omega\)</span> to the extended real numbers <span class="math notranslate nohighlight">\(\R\cup\left\{\pm\infty\right\}\)</span>.</p>
 <p>We say a set function <span class="math notranslate nohighlight">\(\mu\)</span> is <strong>finitely additive</strong> if</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu(A \uplus B) = \mu(A) + \mu(B)
+\[\begin{align*}\mu(A \uplus B) = \mu(A) + \mu(B)
 \end{align*}\]</div>
 <p>The above equation also holds for finitely many disjoint unions of sets, that is,</p>
 <div class="math notranslate nohighlight" id="equation-eq-1">
-<span class="eqno">(1)<a class="headerlink" href="#equation-eq-1" title="Permalink to this equation">#</a></span>\[\begin{align}
-\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^n \mu(A_i)
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-1" title="Permalink to this equation">#</a></span>\[\begin{align}\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^n \mu(A_i)
 \end{align}\]</div>
 <p>which can be proved by the mathematical induction.</p>
 <p>If <a class="reference internal" href="#equation-eq-1">(1)</a> holds for countably infinite disjoint unions of sets, i.e.,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^\infty\mu(A_i)
+\[\begin{align*}\mu\left(\biguplus_{i=1}^n A_i\right)= \sum_{i=1}^\infty\mu(A_i)
 \end{align*}\]</div>
 <p>Then we say <span class="math notranslate nohighlight">\(\mu\)</span> is <strong><span class="math notranslate nohighlight">\(\sigma\)</span>-additive</strong>.</p>
 <div class="proof definition admonition" id="definition-0">
@@ -434,28 +431,27 @@ title="Print to PDF"
 <section class="proposition-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\((\Omega, \F, \mu)\)</span> be a measure space. For <span class="math notranslate nohighlight">\(A, B \in\F\)</span>, we have</p>
 <div class="math notranslate nohighlight" id="equation-eq-2">
-<span class="eqno">(2)<a class="headerlink" href="#equation-eq-2" title="Permalink to this equation">#</a></span>\[ \begin{align}\begin{aligned}\begin{align}\\A \subset B \implies\mu(A) \leq\mu(B)
-\end{align}\end{aligned}\end{align} \]</div>
+<span class="eqno">(2)<a class="headerlink" href="#equation-eq-2" title="Permalink to this equation">#</a></span>\[\begin{align}
+A \subset B \implies\mu(A) \leq\mu(B)
+\end{align}\]</div>
 <p>Moreover, if <span class="math notranslate nohighlight">\(\mu(A) &lt; \infty\)</span> in <a class="reference internal" href="#equation-eq-2">(2)</a>, we have</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu(B \setminus A) = \mu(B) - \mu(A)
+\[\begin{align*}\mu(B \setminus A) = \mu(B) - \mu(A)
 \end{align*}\]</div>
 </section>
 </div><div class="proof admonition" id="proof">
 <p>Proof. Suppose <span class="math notranslate nohighlight">\(A \subset B\)</span>. We have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\B = A \uplus(B \setminus A)
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+B = A \uplus(B \setminus A)
+\end{align*}\]</div>
 <p>By the <span class="math notranslate nohighlight">\(\sigma\)</span>-additivity (or weaker, the finite additivity), it follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu(B) = \mu(A) + \mu(B \setminus A)
+\[\begin{align*}\mu(B) = \mu(A) + \mu(B \setminus A)
 \end{align*}\]</div>
 <p><a class="reference internal" href="#equation-eq-2">(2)</a> follows since <span class="math notranslate nohighlight">\(\mu(B \setminus A) \geq 0\)</span>. If <span class="math notranslate nohighlight">\(\mu(A) &lt; \infty\)</span>, by subtracting <span class="math notranslate nohighlight">\(\mu(A)\)</span> from both sides of the above equation, we obtain</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu(B) - \mu(A) = \mu(B \setminus A)
+\[\begin{align*}\mu(B) - \mu(A) = \mu(B \setminus A)
 \end{align*}\]</div>
 </div>
 <p>Given a sequence of sets <span class="math notranslate nohighlight">\(\left\{A_k\right\}\)</span>, we need this sequence of sets to be mutually disjoint in order to apply the <span class="math notranslate nohighlight">\(\sigma\)</span>-additivity of a measure. However, it is not the case in general. But we can easily construct another sequence of mutually disjoint sets from <span class="math notranslate nohighlight">\(\left\{A_k\right\}\)</span> while keeping the union of first <span class="math notranslate nohighlight">\(n\)</span> sets unchanged. The procedure is illustrated in the following proposition.</p>
@@ -464,18 +460,17 @@ title="Print to PDF"
 <section class="proposition-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(\left\{A_k\right\}_{k\in\Ns}\)</span> be sequence of subsets of <span class="math notranslate nohighlight">\(\Omega\)</span>. Let <span class="math notranslate nohighlight">\(B_k\)</span> be given by</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
+\end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A_0 := \emptyset\)</span>. Then <span class="math notranslate nohighlight">\(\left\{ B_k \right\}\)</span> is a family of mutually disjoint sets, and</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\biguplus_{k=1}^n B_k 
+\[\begin{align*}\biguplus_{k=1}^n B_k 
 = \bigcup_{k=1}^n A_k
 \quad\forall n \in\Ns\end{align*}\]</div>
 <p>Specially,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\biguplus_{k=1}^\infty B_k 
+\[\begin{align*}\biguplus_{k=1}^\infty B_k 
 = \bigcup_{k=1}^\infty A_k
 \end{align*}\]</div>
 </section>
@@ -492,8 +487,7 @@ title="Print to PDF"
 <section class="proposition-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\((\Omega, \F, \mu)\)</span> be a measure space, and <span class="math notranslate nohighlight">\(\left\{A_k\right\}\)</span> a sequence of sets in <span class="math notranslate nohighlight">\(\F\)</span>. We have</p>
 <div class="math notranslate nohighlight" id="equation-eq-3">
-<span class="eqno">(3)<a class="headerlink" href="#equation-eq-3" title="Permalink to this equation">#</a></span>\[\begin{align}
-\mu\left(\bigcup_{k=1}^\infty A_k\right)\leq\sum_{k=1}^\infty\mu(A_k)
+<span class="eqno">(3)<a class="headerlink" href="#equation-eq-3" title="Permalink to this equation">#</a></span>\[\begin{align}\mu\left(\bigcup_{k=1}^\infty A_k\right)\leq\sum_{k=1}^\infty\mu(A_k)
 \end{align}\]</div>
 </section>
 </div><div class="proof remark admonition" id="remark-6">
@@ -504,12 +498,12 @@ title="Print to PDF"
 </div><div class="proof admonition" id="proof">
 <p>Proof. Let <span class="math notranslate nohighlight">\(B_k\)</span> be given by</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+B_k = A_k \setminus\bigcup_{i=1}^{k-1} A_i
+\end{align*}\]</div>
 <p>as in <a class="reference internal" href="#pro:1">Proposition 3</a>. Then we have</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\mu\left(\bigcup_{k=1}^\infty A_k\right)        = \mu\left(\biguplus_{k=1}^\infty B_k\right)        = \sum_{k=1}^\infty\mu(B_k)
+\[\begin{align*}\mu\left(\bigcup_{k=1}^\infty A_k\right)        = \mu\left(\biguplus_{k=1}^\infty B_k\right)        = \sum_{k=1}^\infty\mu(B_k)
 \leq\sum_{k=1}^\infty\mu(A_k)
 \end{align*}\]</div>
 <p>The last inequality follows from <a class="reference internal" href="#pro:2">Proposition 2</a>.</p>

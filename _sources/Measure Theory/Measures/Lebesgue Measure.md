@@ -42,8 +42,7 @@ Therefore, our major goal is to prove
 
 ```{math}
 :label: eq:17
-\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda(S_k)
+\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda(S_k)
 \end{align}
 ```
 
@@ -61,7 +60,6 @@ If
 
 ```{math}
 \begin{align*}
-
 A = \biguplus_{k=1}^\infty A_k
 \end{align*}
 ```
@@ -70,8 +68,7 @@ where $A, A_k \in\A(\SSS)$, then we have the following inequality:
 
 ```{math}
 :label: eq:8
-\begin{align}
-\lambda_0(A) \geq\sum_{k=1}^\infty\lambda_0(A_k) 
+\begin{align}\lambda_0(A) \geq\sum_{k=1}^\infty\lambda_0(A_k) 
 \end{align}
 ```
 
@@ -82,8 +79,7 @@ where $A, A_k \in\A(\SSS)$, then we have the following inequality:
 By the finite additivity and monotonicity of $\lambda_0$, for each $n \in\Ns$, we have 
 
 ```{math}
-\begin{align*}
-\lambda_0(A)
+\begin{align*}\lambda_0(A)
 = \lambda_0\left(\biguplus_{k=1}^\infty A_k\right)\geq\lambda_0\left(\biguplus_{k=1}^n A_k\right)        = \sum_{k=1}^n \lambda_0(A_k)
 \end{align*}
 ```
@@ -103,7 +99,6 @@ Let $S = (a, b]$. If
 
 ```{math}
 \begin{align*}
-
 S = \biguplus_{k=1}^\infty S_k
 \end{align*}
 ```
@@ -112,8 +107,7 @@ where $S_k \in\SSS$, then
 
 ```{math}
 :label: eq:7
-\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
+\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}
 ```
 
@@ -129,8 +123,7 @@ By {prf:ref}`lem:2`, we have
 
 ```{math}
 :label: eq:13
-\begin{align}
-\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
+\begin{align}\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}
 ```
 
@@ -138,8 +131,7 @@ By {prf:ref}`lem:2`, we have
 On the other hand, for an arbitrary $\varepsilon > 0$, we have 
 
 ```{math}
-\begin{align*}
-[a + \varepsilon, b]\subset(a, b]
+\begin{align*}[a + \varepsilon, b]\subset(a, b]
 = S
 = \biguplus_{k=1}^\infty S_k
 = \biguplus_{k=1}^\infty(a_k, b_k]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
@@ -149,16 +141,14 @@ On the other hand, for an arbitrary $\varepsilon > 0$, we have
 Hence,
 
 ```{math}
-\begin{align*}
-[a + \varepsilon, b]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
+\begin{align*}[a + \varepsilon, b]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
 \end{align*}
 ```
 
 Note that $[a + \varepsilon, b]$ is a compact set in $\R$, and $\left\{(a_k, b_k + \varepsilon / 2^k)\right\}$ forms an open cover. Therefore, there exists $n \in\Ns$ such that 
 
 ```{math}
-\begin{align*}
-[a + \varepsilon, b]\subset\bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k)
+\begin{align*}[a + \varepsilon, b]\subset\bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k)
 \end{align*}
 ```
 
@@ -166,7 +156,6 @@ Then by the monotonicity and finite subadditivity of $\lambda_0$, we have
 
 ```{math}
 \begin{align*}
-
 b-a-\varepsilon 
 = \lambda_0 (a+\varepsilon, b]&\leq\lambda_0 [a+\varepsilon/2, b]\\&\leq\lambda_0 \left( \bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k) \right)\\&\leq\sum_{k=1}^n \lambda_0 (a_k, b_k + \varepsilon / 2^k) \\&\leq\sum_{k=1}^n \lambda_0 (a_k, b_k + \varepsilon / 2^k]\\&= \sum_{k=1}^n (b_k - a_k) + 
 \sum_{k=1}^n \varepsilon/2^k \\&< \varepsilon + \sum_{k=1}^\infty(b_k - a_k)
@@ -176,8 +165,7 @@ b-a-\varepsilon
 In summary, we have obtained
 
 ```{math}
-\begin{align*}
-\lambda_0 (a, b] = b - a 
+\begin{align*}\lambda_0 (a, b] = b - a 
 < 2\varepsilon + \sum_{k=1}^\infty(b_k - a_k)
 = 2\varepsilon + \sum_{k=1}^\infty\lambda_0 (a_k, b_k]\quad\forall\varepsilon > 0
 \end{align*}
@@ -187,8 +175,7 @@ Therefore, we have
 
 ```{math}
 :label: eq:9
-\begin{align}
-\lambda_0 (S) \leq\sum_{k=1}^\infty\lambda_0 (S_k)
+\begin{align}\lambda_0 (S) \leq\sum_{k=1}^\infty\lambda_0 (S_k)
 \end{align}
 ```
 
@@ -211,8 +198,7 @@ Let $E_n = (-n, n]$ where $n \in\Ns$. Then
 
 ```{math}
 :label: eq:10
-\begin{align}
-\lim_{n \to \infty}\lambda_0 (S \cap E_n) = \lambda_0(S)
+\begin{align}\lim_{n \to \infty}\lambda_0 (S \cap E_n) = \lambda_0(S)
 \end{align}
 ```
 
@@ -229,8 +215,7 @@ First, we observe that indeed $S \cap E_n \in\SSS\subset\A(\SSS) \;\forall n \in
 ($S = \emptyset$) {eq}`eq:10` holds because
 
 ```{math}
-\begin{align*}
-\lambda_0(S \cap E_n) = \lambda_0(\emptyset) = 0
+\begin{align*}\lambda_0(S \cap E_n) = \lambda_0(\emptyset) = 0
 \end{align*}
 ```
 
@@ -239,7 +224,6 @@ First, we observe that indeed $S \cap E_n \in\SSS\subset\A(\SSS) \;\forall n \in
 
 ```{math}
 \begin{align*}
-
 S \cap E_n = (a, b]\cap(-n, n]
 = (a, b]
 = S
@@ -250,8 +234,7 @@ S \cap E_n = (a, b]\cap(-n, n]
 Thus, 
 
 ```{math}
-\begin{align*}
-\lambda_0(S \cap E_n)
+\begin{align*}\lambda_0(S \cap E_n)
 = \lambda_0(S)
 \quad\forall n \geq N
 \end{align*}
@@ -265,7 +248,6 @@ which implies {eq}`eq:10`.
 
 ```{math}
 \begin{align*}
-
 S \cap E_n
 = (a, \infty) \cap(-n, n]
 = (a, n]\quad\forall n \geq N
@@ -275,8 +257,7 @@ S \cap E_n
 It then follows that 
 
 ```{math}
-\begin{align*}
-\lambda_0(S \cap E_n)
+\begin{align*}\lambda_0(S \cap E_n)
 = \lambda_0 (a, n]
 = n-a
 \quad\forall n \geq N
@@ -286,8 +267,7 @@ It then follows that
 By letting $n \to\infty$, we obtain
 
 ```{math}
-\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty}(n-a) = \infty
 = \lambda_0 (a, \infty)
 = \lambda_0(S)
@@ -302,7 +282,6 @@ which is exactly {eq}`eq:10`.
 
 ```{math}
 \begin{align*}
-
 S \cap E_n = (-n, b]\quad\forall n \geq N
 \end{align*}
 ```
@@ -310,8 +289,7 @@ S \cap E_n = (-n, b]\quad\forall n \geq N
 where $N$ is a constant integer larger than $b$. It follows that 
 
 ```{math}
-\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty}(n+b)
 = \infty
 = \lambda_0 (-\infty, b]
@@ -322,7 +300,6 @@ where $N$ is a constant integer larger than $b$. It follows that
 
 ```{math}
 \begin{align*}
-
 S \cap E_n = \R\cap(-n, n]
 = (-n, n]\quad\forall n \in\Ns\end{align*}
 ```
@@ -330,8 +307,7 @@ S \cap E_n = \R\cap(-n, n]
 It follows that 
 
 ```{math}
-\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty} 2n
 = \infty
 = \lambda_0(\R)
@@ -351,7 +327,6 @@ Let $S \in\SSS$. If
 
 ```{math}
 \begin{align*}
-
 S = \biguplus_{k=1}^\infty S_k
 \end{align*}
 ```
@@ -360,8 +335,7 @@ where $S_k \in\SSS$, then
 
 ```{math}
 :label: eq:12
-\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
+\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}
 ```
 
@@ -373,8 +347,7 @@ Firstly, by {prf:ref}`lem:2`, we have
 
 ```{math}
 :label: eq:14
-\begin{align}
-\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
+\begin{align}\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}
 ```
 
@@ -382,8 +355,7 @@ What is left to prove is
 
 ```{math}
 :label: eq:15
-\begin{align}
-\lambda_0(S) \leq\sum_{k=1}^\infty\lambda_0(S_k) 
+\begin{align}\lambda_0(S) \leq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}
 ```
 
@@ -391,8 +363,7 @@ If $S = \emptyset$, then {eq}`eq:15` holds trivially, since all $S_k$'s must als
 
 ```{math}
 :label: eq:16
-\begin{align}
-\lambda_0(S \cap E_n)
+\begin{align}\lambda_0(S \cap E_n)
 = \sum_{k=1}^\infty\lambda_0 (S_k \cap E_n)
 \leq\sum_{k=1}^\infty\lambda_0 S_k
 \end{align}
@@ -401,8 +372,7 @@ If $S = \emptyset$, then {eq}`eq:15` holds trivially, since all $S_k$'s must als
 The last inequality follows from the monotonicity of $\lambda_0$. We then send $n \to\infty$ on both sides of {eq}`eq:16`. It follows from {prf:ref}`lem:4` that 
 
 ```{math}
-\begin{align*}
-\lambda_0(S)
+\begin{align*}\lambda_0(S)
 = \lim_{n\to\infty}\lambda_0(S \cap E_n)
 \leq\sum_{k=1}^\infty\lambda_0(S_k)
 \end{align*}

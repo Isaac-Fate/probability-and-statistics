@@ -417,8 +417,7 @@ title="Print to PDF"
 <p>After that, we are allowed to extend <span class="math notranslate nohighlight">\(\ell\)</span> to the Lebesgue measure <span class="math notranslate nohighlight">\(\lambda\)</span> on <span class="math notranslate nohighlight">\(\sigma(\SSS)\)</span> as soon as we prove that <span class="math notranslate nohighlight">\(\lambda_0\)</span> is <span class="math notranslate nohighlight">\(\sigma\)</span>-finite, which is easy to prove, to guarantee the uniqueness of the extension.</p>
 <p>Therefore, our major goal is to prove</p>
 <div class="math notranslate nohighlight" id="equation-eq-17">
-<span class="eqno">(7)<a class="headerlink" href="#equation-eq-17" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda(S_k)
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-17" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda(S_k)
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(S = \biguplus_{k=1}^\infty S_k\)</span>.</p>
 <p>To prove the equation <a class="reference internal" href="#equation-eq-17">(7)</a>, we need to show that the left-hand side is less than or equal to the right-hand side as well as that the right-hand side is less than or equal to the left-hand side. We note that one of these two inequalities is easy to show, which is stated in the following lemma.</p>
@@ -427,19 +426,18 @@ title="Print to PDF"
 <section class="lemma-content" id="proof-content">
 <p>If</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\A = \biguplus_{k=1}^\infty A_k
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+A = \biguplus_{k=1}^\infty A_k
+\end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A, A_k \in\A(\SSS)\)</span>, then we have the following inequality:</p>
 <div class="math notranslate nohighlight" id="equation-eq-8">
-<span class="eqno">(8)<a class="headerlink" href="#equation-eq-8" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(A) \geq\sum_{k=1}^\infty\lambda_0(A_k) 
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-8" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(A) \geq\sum_{k=1}^\infty\lambda_0(A_k) 
 \end{align}\]</div>
 </section>
 </div><div class="proof admonition" id="proof">
 <p>Proof. By the finite additivity and monotonicity of <span class="math notranslate nohighlight">\(\lambda_0\)</span>, for each <span class="math notranslate nohighlight">\(n \in\Ns\)</span>, we have</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0(A)
+\[\begin{align*}\lambda_0(A)
 = \lambda_0\left(\biguplus_{k=1}^\infty A_k\right)\geq\lambda_0\left(\biguplus_{k=1}^n A_k\right)        = \sum_{k=1}^n \lambda_0(A_k)
 \end{align*}\]</div>
 <p>Hence, <a class="reference internal" href="#equation-eq-8">(8)</a> follows by letting <span class="math notranslate nohighlight">\(n \to\infty\)</span>.</p>
@@ -450,56 +448,51 @@ title="Print to PDF"
 <section class="lemma-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(S = (a, b]\)</span>. If</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S = \biguplus_{k=1}^\infty S_k
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+S = \biguplus_{k=1}^\infty S_k
+\end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(S_k \in\SSS\)</span>, then</p>
 <div class="math notranslate nohighlight" id="equation-eq-7">
-<span class="eqno">(9)<a class="headerlink" href="#equation-eq-7" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-7" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}\]</div>
 </section>
 </div><div class="proof admonition" id="proof">
 <p>Proof. Without loss of generality, we may assume that <span class="math notranslate nohighlight">\(S_k \neq\emptyset\;\forall k \in\Ns\)</span>. We observe that each <span class="math notranslate nohighlight">\(S_k\)</span> must have the form <span class="math notranslate nohighlight">\((a_k, b_k]\)</span> since <span class="math notranslate nohighlight">\(S = (a, b]\)</span>. Otherwise, <span class="math notranslate nohighlight">\(S\)</span> cannot be a finite interval.</p>
 <p>By <a class="reference internal" href="#lem:2">Lemma 2</a>, we have</p>
 <div class="math notranslate nohighlight" id="equation-eq-13">
-<span class="eqno">(10)<a class="headerlink" href="#equation-eq-13" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
+<span class="eqno">(10)<a class="headerlink" href="#equation-eq-13" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}\]</div>
 <p>On the other hand, for an arbitrary <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, we have</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-[a + \varepsilon, b]\subset(a, b]
+\[\begin{align*}[a + \varepsilon, b]\subset(a, b]
 = S
 = \biguplus_{k=1}^\infty S_k
 = \biguplus_{k=1}^\infty(a_k, b_k]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
 \end{align*}\]</div>
 <p>Hence,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-[a + \varepsilon, b]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
+\[\begin{align*}[a + \varepsilon, b]\subset\bigcup_{k=1}^\infty(a_k, b_k + \varepsilon / 2^k)
 \end{align*}\]</div>
 <p>Note that <span class="math notranslate nohighlight">\([a + \varepsilon, b]\)</span> is a compact set in <span class="math notranslate nohighlight">\(\R\)</span>, and <span class="math notranslate nohighlight">\(\left\{(a_k, b_k + \varepsilon / 2^k)\right\}\)</span> forms an open cover. Therefore, there exists <span class="math notranslate nohighlight">\(n \in\Ns\)</span> such that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-[a + \varepsilon, b]\subset\bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k)
+\[\begin{align*}[a + \varepsilon, b]\subset\bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k)
 \end{align*}\]</div>
 <p>Then by the monotonicity and finite subadditivity of <span class="math notranslate nohighlight">\(\lambda_0\)</span>, we have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\\begin{split}b-a-\varepsilon 
+\[\begin{split}\begin{align*}
+b-a-\varepsilon 
 = \lambda_0 (a+\varepsilon, b]&amp;\leq\lambda_0 [a+\varepsilon/2, b]\\&amp;\leq\lambda_0 \left( \bigcup_{k=1}^n (a_k, b_k + \varepsilon / 2^k) \right)\\&amp;\leq\sum_{k=1}^n \lambda_0 (a_k, b_k + \varepsilon / 2^k) \\&amp;\leq\sum_{k=1}^n \lambda_0 (a_k, b_k + \varepsilon / 2^k]\\&amp;= \sum_{k=1}^n (b_k - a_k) + 
 \sum_{k=1}^n \varepsilon/2^k \\&amp;&lt; \varepsilon + \sum_{k=1}^\infty(b_k - a_k)
-\end{align*}\end{split}\end{aligned}\end{align} \]</div>
+\end{align*}\end{split}\]</div>
 <p>In summary, we have obtained</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0 (a, b] = b - a 
+\[\begin{align*}\lambda_0 (a, b] = b - a 
 &lt; 2\varepsilon + \sum_{k=1}^\infty(b_k - a_k)
 = 2\varepsilon + \sum_{k=1}^\infty\lambda_0 (a_k, b_k]\quad\forall\varepsilon &gt; 0
 \end{align*}\]</div>
 <p>Therefore, we have</p>
 <div class="math notranslate nohighlight" id="equation-eq-9">
-<span class="eqno">(11)<a class="headerlink" href="#equation-eq-9" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0 (S) \leq\sum_{k=1}^\infty\lambda_0 (S_k)
+<span class="eqno">(11)<a class="headerlink" href="#equation-eq-9" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0 (S) \leq\sum_{k=1}^\infty\lambda_0 (S_k)
 \end{align}\]</div>
 <p>by letting <span class="math notranslate nohighlight">\(\varepsilon\to 0\)</span>.</p>
 <p>Finally, <a class="reference internal" href="#equation-eq-13">(10)</a> follows from <a class="reference internal" href="#equation-eq-8">(8)</a> and <a class="reference internal" href="#equation-eq-9">(11)</a>.</p>
@@ -510,8 +503,7 @@ title="Print to PDF"
 <section class="lemma-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(E_n = (-n, n]\)</span> where <span class="math notranslate nohighlight">\(n \in\Ns\)</span>. Then</p>
 <div class="math notranslate nohighlight" id="equation-eq-10">
-<span class="eqno">(12)<a class="headerlink" href="#equation-eq-10" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lim_{n \to \infty}\lambda_0 (S \cap E_n) = \lambda_0(S)
+<span class="eqno">(12)<a class="headerlink" href="#equation-eq-10" title="Permalink to this equation">#</a></span>\[\begin{align}\lim_{n \to \infty}\lambda_0 (S \cap E_n) = \lambda_0(S)
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(S \in\SSS\)</span>.</p>
 </section>
@@ -519,42 +511,40 @@ title="Print to PDF"
 <p>Proof. First, we observe that indeed <span class="math notranslate nohighlight">\(S \cap E_n \in\SSS\subset\A(\SSS) \;\forall n \in\Ns\)</span>. We then prove <a class="reference internal" href="#equation-eq-10">(12)</a> by considering each form of <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <p>(<span class="math notranslate nohighlight">\(S = \emptyset\)</span>) <a class="reference internal" href="#equation-eq-10">(12)</a> holds because</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0(S \cap E_n) = \lambda_0(\emptyset) = 0
+\[\begin{align*}\lambda_0(S \cap E_n) = \lambda_0(\emptyset) = 0
 \end{align*}\]</div>
 <p>(<span class="math notranslate nohighlight">\(S = (a, b]\)</span>) There exists a large enough <span class="math notranslate nohighlight">\(N \in\Ns\)</span> such that <span class="math notranslate nohighlight">\(N &gt; \max\left\{-a, b\right\}\)</span>. It follows that</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S \cap E_n = (a, b]\cap(-n, n]
+\[\begin{align*}
+S \cap E_n = (a, b]\cap(-n, n]
 = (a, b]
 = S
 \quad\forall n \geq N
-\end{align*}\end{aligned}\end{align} \]</div>
+\end{align*}\]</div>
 <p>Thus,</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0(S \cap E_n)
+\[\begin{align*}\lambda_0(S \cap E_n)
 = \lambda_0(S)
 \quad\forall n \geq N
 \end{align*}\]</div>
 <p>which implies <a class="reference internal" href="#equation-eq-10">(12)</a>.</p>
 <p>(<span class="math notranslate nohighlight">\(S = (a, \infty)\)</span>) There exists <span class="math notranslate nohighlight">\(N \in\Ns\)</span> such that <span class="math notranslate nohighlight">\(N &gt; -a\)</span>. Then, we have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S \cap E_n
+\[\begin{align*}
+S \cap E_n
 = (a, \infty) \cap(-n, n]
 = (a, n]\quad\forall n \geq N
-\end{align*}\end{aligned}\end{align} \]</div>
+\end{align*}\]</div>
 <p>It then follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0(S \cap E_n)
+\[\begin{align*}\lambda_0(S \cap E_n)
 = \lambda_0 (a, n]
 = n-a
 \quad\forall n \geq N
 \end{align*}\]</div>
 <p>By letting <span class="math notranslate nohighlight">\(n \to\infty\)</span>, we obtain</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\[\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty}(n-a) = \infty
 = \lambda_0 (a, \infty)
 = \lambda_0(S)
@@ -562,12 +552,12 @@ title="Print to PDF"
 <p>which is exactly <a class="reference internal" href="#equation-eq-10">(12)</a>.</p>
 <p>(<span class="math notranslate nohighlight">\(S = (-\infty, b]\)</span>) Similar to the proof of the preceding case, we have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S \cap E_n = (-n, b]\quad\forall n \geq N
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+S \cap E_n = (-n, b]\quad\forall n \geq N
+\end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(N\)</span> is a constant integer larger than <span class="math notranslate nohighlight">\(b\)</span>. It follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\[\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty}(n+b)
 = \infty
 = \lambda_0 (-\infty, b]
@@ -575,12 +565,12 @@ title="Print to PDF"
 \end{align*}\]</div>
 <p>(<span class="math notranslate nohighlight">\(S = \R\)</span>) In this case, we have</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S \cap E_n = \R\cap(-n, n]
-= (-n, n]\quad\forall n \in\Ns\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+S \cap E_n = \R\cap(-n, n]
+= (-n, n]\quad\forall n \in\Ns\end{align*}\]</div>
 <p>It follows that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lim_{n\to\infty}\lambda_0(S \cap E_n)
+\[\begin{align*}\lim_{n\to\infty}\lambda_0(S \cap E_n)
 = \lim_{n\to\infty} 2n
 = \infty
 = \lambda_0(\R)
@@ -593,36 +583,32 @@ title="Print to PDF"
 <section class="lemma-content" id="proof-content">
 <p>Let <span class="math notranslate nohighlight">\(S \in\SSS\)</span>. If</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{align*}\\S = \biguplus_{k=1}^\infty S_k
-\end{align*}\end{aligned}\end{align} \]</div>
+\[\begin{align*}
+S = \biguplus_{k=1}^\infty S_k
+\end{align*}\]</div>
 <p>where <span class="math notranslate nohighlight">\(S_k \in\SSS\)</span>, then</p>
 <div class="math notranslate nohighlight" id="equation-eq-12">
-<span class="eqno">(13)<a class="headerlink" href="#equation-eq-12" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
+<span class="eqno">(13)<a class="headerlink" href="#equation-eq-12" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) = \sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}\]</div>
 </section>
 </div><div class="proof admonition" id="proof">
 <p>Proof. Firstly, by <a class="reference internal" href="#lem:2">Lemma 2</a>, we have</p>
 <div class="math notranslate nohighlight" id="equation-eq-14">
-<span class="eqno">(14)<a class="headerlink" href="#equation-eq-14" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
+<span class="eqno">(14)<a class="headerlink" href="#equation-eq-14" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) \geq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}\]</div>
 <p>What is left to prove is</p>
 <div class="math notranslate nohighlight" id="equation-eq-15">
-<span class="eqno">(15)<a class="headerlink" href="#equation-eq-15" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S) \leq\sum_{k=1}^\infty\lambda_0(S_k) 
+<span class="eqno">(15)<a class="headerlink" href="#equation-eq-15" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S) \leq\sum_{k=1}^\infty\lambda_0(S_k) 
 \end{align}\]</div>
 <p>If <span class="math notranslate nohighlight">\(S = \emptyset\)</span>, then <a class="reference internal" href="#equation-eq-15">(15)</a> holds trivially, since all <span class="math notranslate nohighlight">\(S_k\)</span>’s must also be empty sets. In the rest of the proof, we assume that <span class="math notranslate nohighlight">\(S \neq\emptyset\)</span>. Let <span class="math notranslate nohighlight">\(E_n = (-n, n]\)</span>. It is clear that <span class="math notranslate nohighlight">\(S \cap E_n \in\SSS\)</span> since <span class="math notranslate nohighlight">\(S, E_n \in\SSS\)</span>. Moreover, we observe that the set <span class="math notranslate nohighlight">\(S \cap E_n\)</span> has the form <span class="math notranslate nohighlight">\((a, b]\)</span> for <span class="math notranslate nohighlight">\(n \geq N\)</span> where <span class="math notranslate nohighlight">\(N \in\Ns\)</span> is some constant large enough integer. It then follows from <a class="reference internal" href="#lem:3">Lemma 3</a> that</p>
 <div class="math notranslate nohighlight" id="equation-eq-16">
-<span class="eqno">(16)<a class="headerlink" href="#equation-eq-16" title="Permalink to this equation">#</a></span>\[\begin{align}
-\lambda_0(S \cap E_n)
+<span class="eqno">(16)<a class="headerlink" href="#equation-eq-16" title="Permalink to this equation">#</a></span>\[\begin{align}\lambda_0(S \cap E_n)
 = \sum_{k=1}^\infty\lambda_0 (S_k \cap E_n)
 \leq\sum_{k=1}^\infty\lambda_0 S_k
 \end{align}\]</div>
 <p>The last inequality follows from the monotonicity of <span class="math notranslate nohighlight">\(\lambda_0\)</span>. We then send <span class="math notranslate nohighlight">\(n \to\infty\)</span> on both sides of <a class="reference internal" href="#equation-eq-16">(16)</a>. It follows from <a class="reference internal" href="#lem:4">Lemma 4</a> that</p>
 <div class="math notranslate nohighlight">
-\[\begin{align*}
-\lambda_0(S)
+\[\begin{align*}\lambda_0(S)
 = \lim_{n\to\infty}\lambda_0(S \cap E_n)
 \leq\sum_{k=1}^\infty\lambda_0(S_k)
 \end{align*}\]</div>
